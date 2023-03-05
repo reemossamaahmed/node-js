@@ -31,10 +31,40 @@ yargs.command({
             demandOption:true,
             type:'string'
         },
+        sub1 : {
+            describe:"Adding sub1",
+            demandOption:true,
+            type:"string"
+        },
+        sub2 : {
+            describe:"Adding sub2",
+            demandOption:true,
+            type:"string"
+        },
+        sub3 : {
+            describe:"Adding sub3",
+            demandOption:true,
+            type:"string"
+        },
+        sub4 : {
+            describe:"Adding sub4",
+            demandOption:true,
+            type:"string"
+        },
+        sub5 : {
+            describe:"Adding sub5",
+            demandOption:true,
+            type:"string"
+        },
+        sub6 : {
+            describe:"Adding sub6",
+            demandOption:true,
+            type:"string"
+        }
     },
     handler:(action)=>{
         // console.log('add a new person');
-        actions.addData(action.id,action.fname,action.lname,action.age,action.city);
+        actions.addData(action.id,action.fname,action.lname,action.age,action.city,action.sub1,action.sub2,action.sub3,action.sub4,action.sub5,action.sub6);
     }
 });
 

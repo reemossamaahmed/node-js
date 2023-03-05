@@ -124,5 +124,14 @@
         "lname": "Gamal",
         "age": "28",
         "city": "Tanta"
+    },
+    {
+        "id": "22",
+        "fName": "yossif",
+        "lname": "ahmed",
+        "age": "20",
+        "city": "alex",
+        "sum": 60,
+        "avg": 10
     }
 ]

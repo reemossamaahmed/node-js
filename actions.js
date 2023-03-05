@@ -17,8 +17,17 @@ const saveData= (data)=>{
 }
 
 
-const addData = (id,Fname,Lname,age,city)=>{
+const addData = (id,Fname,Lname,age,city,sub1,sub2,sub3,sub4,sub5,sub6)=>{
     const data = loadData();
+    
+    const arraySub =[sub1,sub2,sub3,sub4,sub5,sub6];
+    let sum = 0;
+    let avg =0;
+    arraySub.forEach(sub => {
+        // sum += sub;
+        sum += parseInt(sub);
+        avg = sum/arraySub.length;
+    });
 
     duplicatedData = data.filter((person)=>{
         return person.id === id;
@@ -31,7 +40,9 @@ const addData = (id,Fname,Lname,age,city)=>{
             fName:Fname,
             lname:Lname,
             age:age,
-            city:city
+            city:city,
+            sum:sum,
+            avg:avg,
         });
         saveData(data);
     
